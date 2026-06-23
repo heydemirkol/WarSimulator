@@ -17,7 +17,7 @@
          Any (Core logic with no environment dependencies)
 
       LAST MODIFIED:
-         June 10, 2026
+         June 23, 2026
 
 ============================================================================
 */
@@ -25,7 +25,7 @@
 #include "Format.h"
 #include <string>
 
-std::string formatNumber(long long number) {
+std::string formatNumber(long long& number) {
     std::string valueNumber = std::to_string(number); // convert number
     std::string valueSign = ""; // final sign
 
@@ -52,7 +52,34 @@ std::string formatNumber(long long number) {
     return valueSign + valueResult; // return formatted
 }
 
-std::string formatNumber(double number) {
+std::string formatNumber(int& number) {
+    std::string valueNumber = std::to_string(number); // convert number
+    std::string valueSign = ""; // final sign
+
+    // handle negative sign
+    if (valueNumber[0] == '-') {
+        valueSign = "-"; // set negative
+        valueNumber.erase(0, 1); // delete minus
+    }   
+
+    std::string valueResult = ""; // final string
+    int valueCount = 0; // digit counter
+
+    // loop backwards to insert commas
+    for (int i = valueNumber.size() - 1; i >= 0; --i) {
+         valueResult = valueNumber[i] + valueResult; // add digit
+         valueCount++; // increase count
+         
+         if (valueCount == 3 && i != 0) {
+             valueResult = "," + valueResult; // add comma
+             valueCount = 0; // reset counter
+         }
+    }
+
+    return valueSign + valueResult; // return formatted
+}
+
+std::string formatNumber(double& number) {
     if (number >= 0) number = number + 0.005; // round up positive
     else number = number - 0.005; // round down negative
 

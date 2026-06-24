@@ -1,21 +1,21 @@
-#ifndef LEADER_H
-#define LEADER_H
+#ifndef COMMANDER_H
+#define COMMANDER_H
 
 #include <string>
 
-class Leader {
+class Commander {
 private:
     std::string name_;
 
     long long budget_;
 
 public:
-    Leader();
+    Commander();
 
-    std::string getLeaderName() const;
+    std::string getCommanderName() const;
     long long getBudget() const;
 
-    void setLeaderName(const std::string& name);
+    void setCommanderName(const std::string& name);
 
     void addBudget(long long amount);
     

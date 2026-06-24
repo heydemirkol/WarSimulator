@@ -1,28 +1,28 @@
-#include "Leader.h"
+#include "Commander.h"
 #include "Clamp.h"
 
-Leader::Leader() 
+Commander::Commander() 
     : budget_(0) // starting budget
 {}
 
-std::string Leader::getLeaderName() const {
+std::string Commander::getCommanderName() const {
     return name_;
 }
 
-long long Leader::getBudget() const {
+long long Commander::getBudget() const {
     return budget_;
 }
 
-void Leader::setLeaderName(const std::string& name) {
+void Commander::setCommanderName(const std::string& name) {
     name_ = name;
 }
 
-void Leader::addBudget(long long amount) { // if greater than 0, add budget
+void Commander::addBudget(long long amount) { // if greater than 0, add budget
     if (amount > 0) budget_ += amount;
 }
 
 // if amount is valid and less than or equal to budget amount, spend budget
-void Leader::spendBudget(long long amount) { 
+void Commander::spendBudget(long long amount) { 
     if (amount > 0 && amount <= budget_)
         budget_ -= amount;
     
@@ -30,6 +30,6 @@ void Leader::spendBudget(long long amount) {
     clampAmount(budget_);
 }
 
-void Leader::resetAllBudget() {
+void Commander::resetAllBudget() {
     budget_ = 0;
 }

@@ -5,7 +5,6 @@ Army::Army() // starting values ​​of units
     : soldier_(0),
       tank_(0),
       jet_(0),
-      radar_(0),
       ship_(0)
 {}
 
@@ -19,10 +18,6 @@ int Army::getTanks() const {
 
 int Army::getJets() const {
     return jet_;
-}
-
-int Army::getRadars() const {
-    return radar_;
 }
 
 int Army::getShips() const {
@@ -39,10 +34,6 @@ void Army::addTank(int amount) {
 
 void Army::addJet(int amount) {
     if (amount > 0) jet_ += amount;
-}
-
-void Army::addRadar(int amount) {
-    if (amount > 0) radar_ += amount;
 }
 
 void Army::addShip(int amount) {
@@ -72,13 +63,6 @@ void Army::removeJet(int amount) {
     clampAmount(jet_);
 }
 
-void Army::removeRadar(int amount) {
-    if (amount > 0 && amount <= radar_)
-        radar_ -= amount;
-
-    clampAmount(radar_);
-}
-
 void Army::removeShip(int amount) {
     if (amount > 0 && amount <= ship_) 
         ship_ -= amount;
@@ -90,6 +74,5 @@ void Army::resetAllUnits() {
     soldier_ = 0;
     tank_ = 0;
     jet_ = 0;
-    radar_ = 0;
     ship_ = 0;
 }

@@ -5,14 +5,14 @@
 #include <iostream>
 #include <string>
 
-static std::string header(const std::string& text) {
-    setConsoleColor("1;31");
-    return "================ " + text + " ================\n";
+static std::string header(const std::string& text) { // static header
+    setConsoleColor("1;31"); // sets bold style and red color
+    return "================ " + text + " ================\n"; // align
 }
 
 void showStats(const Game& game) {
-    printEffectText(header("STATS"));
-    setConsoleColor(36);
+    printEffectText(header("STATS")); // stats header
+    setConsoleColor(36); // sets cyan color
 
     std::cout << "Commander: " 
               << game.commander.getCommanderName() << "\n";
@@ -41,20 +41,21 @@ void showStats(const Game& game) {
     std::cout << "Ships: "
               << formatNumber(game.army.getShips()) << "\n";
 
-    setConsoleColor(0);
+    setConsoleColor(0); // reset color
 }
 
 void showMainMenu() {
-    printEffectText(header("MAIN MENU"));
-    setConsoleColor(36);
+    printEffectText(header("MAIN MENU")); 
+    setConsoleColor(36); 
 
     std::cout << "[1] - War\n";
     std::cout << "[2] - Army Buy or Sell\n";
     std::cout << "[3] - Rebirth\n";
     std::cout << "[4] - Exit\n";
     
-    std::cout << "==============================================\n\n";
-    setConsoleColor(0);
+    std::cout << "==============================================\n\n"; 
+
+    setConsoleColor(0); 
 }
 
 void showArmyMenu(const Army& army) {

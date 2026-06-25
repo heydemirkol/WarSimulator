@@ -261,6 +261,7 @@ int main() {
                  commander.resetAllBudget(); 
                  army.resetAllUnits();     
                  commander.addBudget(70000);
+                 rebirth.addRebirth(1);
 
                  // increase the multiplier
                  multiplier.addIncomeMulti(1);

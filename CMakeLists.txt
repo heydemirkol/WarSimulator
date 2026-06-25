@@ -46,8 +46,12 @@ add_executable(${PROJECT_NAME}
 # include directories
 target_include_directories(${PROJECT_NAME}
     PRIVATE
-        "${PROJECT_SOURCE_DIR}/include"
-        "${PROJECT_SOURCE_DIR}/utils/include"
+        "${PROJECT_SOURCE_DIR}/include/army"
+        "${PROJECT_SOURCE_DIR}/include/systems"
+        "${PROJECT_SOURCE_DIR}/include/ui"
+        "${PROJECT_SOURCE_DIR}/utils/include/console"
+        "${PROJECT_SOURCE_DIR}/utils/include/math"
+        "${PROJECT_SOURCE_DIR}/utils/include/text"
 )
 
 # compiler warning settings

@@ -64,17 +64,17 @@ void showArmyMenu(const Army& army) {
     printEffectText(header("UNITS"));
     setConsoleColor(36);
 
-    std::cout << "[1] - Buy Soldier ($5 per unit)\n";
-    std::cout << "[2] - Buy Tank ($5 per unit)\n";
-    std::cout << "[3] - Buy Jet ($5 per unit)\n";
-    std::cout << "[4] - Buy Ship ($5 per unit)\n";
+    std::cout << "[1] - Buy Soldier ($1 per unit)\n";
+    std::cout << "[2] - Buy Tank ($4 per unit)\n";
+    std::cout << "[3] - Buy Jet ($70 per unit)\n";
+    std::cout << "[4] - Buy Ship ($1,200 per unit)\n";
 
     printEffectText(header("SELL"));
 
-    std::cout << "[5] - Sell Soldier ($5 per unit)\n";
-    std::cout << "[6] - Sell Tank ($5 per unit)\n";
-    std::cout << "[7] - Sell Jet ($5 per unit)\n";
-    std::cout << "[8] - Sell Ship ($5 per unit)\n";
+    std::cout << "[5] - Sell Soldier ($1 per unit)\n";
+    std::cout << "[6] - Sell Tank ($2 per unit)\n";
+    std::cout << "[7] - Sell Jet ($35 per unit)\n";
+    std::cout << "[8] - Sell Ship ($600 per unit)\n";
     std::cout << "[0] - Cancel\n";
     std::cout << "Choose: ";
     

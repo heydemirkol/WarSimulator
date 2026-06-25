@@ -30,9 +30,9 @@ int main() {
 
     commander.setCommanderName(name); // set name
 
-    std::cout << "I'll give you $5 as a gift for testing my game :)\n"; 
+    std::cout << "I'll give you $90,000 as a gift for testing my game :)\n"; 
 
-    commander.addBudget(5);
+    commander.addBudget(90000);
     
      while (true) {
         clearConsole(); // clear the screen after each exit
@@ -48,15 +48,15 @@ int main() {
 
          case 1: // main menu 1st option
             // check if the forces are strong enough
-            if (getLandForce(army) >= 1987 || getAirForce(army) >= 1770 || getNavyForce(army) >= 877) {
+            if (getLandForce(army) >= 20 || getAirForce(army) >= 20 || getNavyForce(army) >= 10) {
                 // reduce units after battle
-                army.removeSoldier(4);
-                army.removeTank(8);
-                army.removeJet(1);
-                army.removeShip(2);
+                army.removeSoldier(8029);
+                army.removeTank(993);
+                army.removeJet(63);
+                army.removeShip(5);
                
                 // add budget based on the multiplier
-                commander.addBudget(multiplier.getIncomeMulti() * 1);
+                commander.addBudget(multiplier.getIncomeMulti() * 159999);
                 
                 std::cout << "\nWin!..";
 
@@ -85,8 +85,8 @@ int main() {
                std::cin >> amount; 
 
                // check if the budget is sufficient
-               if (amount > 0 && commander.getBudget() >= amount * 5) {
-                   commander.spendBudget(amount * 5);
+               if (amount > 0 && commander.getBudget() >= amount) {
+                   commander.spendBudget(amount);
                    army.addSoldier(amount);
 
                    pauseConsole();
@@ -103,8 +103,8 @@ int main() {
                std::cin >> amount; 
 
                // check if the budget is sufficient
-               if (amount > 0 && commander.getBudget() >= amount * 5) {
-                   commander.spendBudget(amount * 5);
+               if (amount > 0 && commander.getBudget() >= amount * 4) {
+                   commander.spendBudget(amount * 4);
                    army.addTank(amount);
 
                    pauseConsole();
@@ -121,8 +121,8 @@ int main() {
                std::cin >> amount; 
 
                // check if the budget is sufficient
-               if (amount > 0 && commander.getBudget() >= amount * 5) {
-                   commander.spendBudget(amount * 5);
+               if (amount > 0 && commander.getBudget() >= amount * 70) {
+                   commander.spendBudget(amount * 70);
                    army.addJet(amount);
 
                    pauseConsole();
@@ -139,8 +139,8 @@ int main() {
                std::cin >> amount; 
 
                // check if the budget is sufficient
-               if (amount > 0 && commander.getBudget() >= amount * 5) {
-                   commander.spendBudget(amount * 5);
+               if (amount > 0 && commander.getBudget() >= amount * 1200) {
+                   commander.spendBudget(amount * 1200);
                    army.addShip(amount);
 
                    pauseConsole();
@@ -158,7 +158,7 @@ int main() {
 
                // check if the soldiers are sufficient
                if (amount > 0 && army.getSoldiers() >= amount) {
-                   commander.addBudget(amount * 5);
+                   commander.addBudget(amount);
                    army.removeSoldier(amount);
 
                    pauseConsole();
@@ -176,7 +176,7 @@ int main() {
 
                // check if the tanks are sufficient
                if (amount > 0 && army.getTanks() >= amount) {
-                   commander.addBudget(amount * 5);
+                   commander.addBudget(amount * 2);
                    army.removeTank(amount);
 
                    pauseConsole();
@@ -194,7 +194,7 @@ int main() {
 
                // check if the jets are sufficient
                if (amount > 0 && army.getJets() >= amount) {
-                   commander.addBudget(amount * 5);
+                   commander.addBudget(amount * 35);
                    army.removeJet(amount);
 
                    pauseConsole();
@@ -212,7 +212,7 @@ int main() {
 
                // check if the ships are sufficient
                if (amount > 0 && army.getShips() >= amount) {
-                   commander.addBudget(amount * 5);
+                   commander.addBudget(amount * 600);
                    army.removeShip(amount);
 
                    pauseConsole();
@@ -234,7 +234,7 @@ int main() {
          } break;
 
          case 3:
-            std::cout << "\nRebirth = $5"; // rebirth money
+            std::cout << "\nRebirth = $350,000"; // rebirth money
             // warning notice
             std::cout << "\nYour income multiplier will increase, but everything will be reset..";
             std::cout << "\nAre you sure? (yes/no): ";
@@ -242,7 +242,7 @@ int main() {
             std::cin >> reply; // get input
              
              // check if the response is "yes" and if the budget is sufficient
-             if (reply == "yes" && commander.getBudget() >= 1) {
+             if (reply == "yes" && commander.getBudget() >= 350000) {
                  commander.resetAllBudget(); 
                  army.resetAllUnits();     
                  

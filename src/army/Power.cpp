@@ -1,8 +1,8 @@
 #include "Power.h"
 
 int getLandForce(Army& army) {
-    double soldierForce = army.getSoldiers() * 0.008;
-    double tankForce = army.getTanks() * 0.032;
+    double soldierForce = army.getSoldiers() * 0.012;
+    double tankForce = army.getTanks() * 0.050;
 
     double landForce = soldierForce + tankForce;
 
@@ -10,7 +10,7 @@ int getLandForce(Army& army) {
 }
 
 int getAirForce(Army& army) {
-    double airForce = army.getJets() * 0.099;
+    double airForce = army.getJets() * 0.138;
 
     return airForce;
 }

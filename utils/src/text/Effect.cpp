@@ -17,7 +17,7 @@
          Terminal and console environments
 
       LAST MODIFIED:
-         June 10, 2026
+         June 25, 2026
 
 ============================================================================
 */
@@ -31,6 +31,6 @@
 void printEffectText(const std::string& text) {
     for (char c : text) {
          std::cout << c << std::flush; // clear buffer
-         std::this_thread::sleep_for(std::chrono::milliseconds(200)); 
+         std::this_thread::sleep_for(std::chrono::milliseconds(90)); 
     } 
 }

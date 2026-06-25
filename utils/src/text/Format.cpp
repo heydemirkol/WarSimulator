@@ -25,7 +25,7 @@
 #include "Format.h"
 #include <string>
 
-std::string formatNumber(long long& number) {
+std::string formatNumber(long long number) {
     std::string valueNumber = std::to_string(number); // convert number
     std::string valueSign = ""; // final sign
 
@@ -52,7 +52,7 @@ std::string formatNumber(long long& number) {
     return valueSign + valueResult; // return formatted
 }
 
-std::string formatNumber(int& number) {
+std::string formatNumber(int number) {
     std::string valueNumber = std::to_string(number); // convert number
     std::string valueSign = ""; // final sign
 
@@ -79,7 +79,7 @@ std::string formatNumber(int& number) {
     return valueSign + valueResult; // return formatted
 }
 
-std::string formatNumber(double& number) {
+std::string formatNumber(double number) {
     if (number >= 0) number = number + 0.005; // round up positive
     else number = number - 0.005; // round down negative
 

@@ -5,6 +5,6 @@
 
 std::string formatNumber(long long number);
 std::string formatNumber(int number);
-std::string formatNumber(double& number);
+std::string formatNumber(double number);
 
 #endif

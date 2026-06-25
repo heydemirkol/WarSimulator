@@ -31,6 +31,6 @@
 void printEffectText(const std::string& text) {
     for (char c : text) {
          std::cout << c << std::flush; // clear buffer
-         std::this_thread::sleep_for(std::chrono::milliseconds(90)); 
+         std::this_thread::sleep_for(std::chrono::milliseconds(50)); 
     } 
 }

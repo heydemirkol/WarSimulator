@@ -1,0 +1,60 @@
+#
+# ===========================================================================
+#
+#       DESCRIPTION:
+#          It defines which files and folders should be ignored by Git
+#          to keep the repository clean and free from build artifacts,
+#          temporary files, and IDE-specific data.
+#
+#       LAST MODIFIED:
+#          June 7, 2026
+#          
+# ===========================================================================
+
+# C++ build outputs
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# build folders
+build/
+bin/
+out/
+cmake-build-*/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# VSCode
+.vscode/
+
+# MinGW / GCC artifacts
+*.d
+*.su
+*.idb
+*.pdb
+*.ilk
+
+# temporary files
+*.tmp
+*.temp
+*.trace
+*.err
+*.debug
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# OS / misc
+.DS_Store

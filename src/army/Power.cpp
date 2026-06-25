@@ -29,4 +29,6 @@ int getAirForce(Army& army) {
 
 int getNavyForce(Army& army) {
     double navyForce = army.getShips() * 0.399;
+    
+    return navyForce;
 }

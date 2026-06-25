@@ -73,14 +73,14 @@ int main() {
                 // add budget based on the multiplier
                 commander.addBudget(multiplier.getIncomeMulti() * 159999);
                 
-                std::cout << "\nWin!..";
+                std::cout << "Win!..";
 
                 pauseConsole();
             }
             else { // insufficient power
-                std::cout << "\nYour army is not strong enough..";
-                std::cout << "\n(Example: tank, soldier = ground category)";
-                std::cout << "\nYou can choose a unit category and only upgrade it before fighting, if you want.";
+                std::cout << "Your army is not strong enough..";
+                std::cout << "(Example: tank, soldier = ground category)";
+                std::cout << "You can choose a unit category and only upgrade it before fighting, if you want.";
 
                 pauseConsole();
             }
@@ -107,7 +107,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient budget...";
+                   std::cout << "Invalid selection or insufficient budget...";
 
                    pauseConsole();
                }
@@ -125,7 +125,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient budget...";
+                   std::cout << "Invalid selection or insufficient budget...";
 
                    pauseConsole();
                }
@@ -143,7 +143,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient budget...";
+                   std::cout << "Invalid selection or insufficient budget...";
 
                    pauseConsole();
                }
@@ -161,7 +161,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient budget...";
+                   std::cout << "Invalid selection or insufficient budget...";
 
                    pauseConsole();
                }
@@ -179,7 +179,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient...";
+                   std::cout << "Invalid selection or insufficient...";
 
                    pauseConsole();
                }
@@ -197,7 +197,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient...";
+                   std::cout << "Invalid selection or insufficient...";
 
                    pauseConsole();
                }
@@ -215,7 +215,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient...";
+                   std::cout << "Invalid selection or insufficient...";
 
                    pauseConsole();
                }
@@ -233,7 +233,7 @@ int main() {
                    pauseConsole();
                }
                else { // Invalid or insufficient
-                   std::cout << "\nInvalid selection or insufficient...";
+                   std::cout << "Invalid selection or insufficient...";
 
                    pauseConsole();
                }
@@ -241,7 +241,7 @@ int main() {
 
             
             default: 
-               std::cout << "\nInvalid selection...";
+               std::cout << "Invalid selection...";
                pauseConsole();
 
                break;
@@ -249,10 +249,10 @@ int main() {
          } break;
 
          case 3:
-            std::cout << "\nRebirth = $350,000"; // rebirth money
+            std::cout << "Rebirth = $350,000\n"; // rebirth money
             // warning notice
-            std::cout << "\nYour income multiplier will increase, but everything will be reset..";
-            std::cout << "\nAre you sure? (yes/no): ";
+            std::cout << "Your income multiplier will increase, but everything will be reset..\n";
+            std::cout << "Are you sure? (yes/no): ";
 
             std::cin >> reply; // get input
              
@@ -260,21 +260,22 @@ int main() {
              if (reply == "yes" && commander.getBudget() >= 350000) {
                  commander.resetAllBudget(); 
                  army.resetAllUnits();     
-                 
+                 commander.addBudget(70000);
+
                  // increase the multiplier
                  multiplier.addIncomeMulti(1);
 
                  pauseConsole();
              } 
              else { // Invalid or insufficient
-                 std::cout << "\nInvalid selection or insufficient...";
+                 std::cout << "Invalid selection or insufficient...";
 
                  pauseConsole();
              }
              break;
 
          default:
-            std::cout << "\nInvalid selection...";
+            std::cout << "Invalid selection...";
 
             pauseConsole();
             break;

@@ -1,3 +1,16 @@
+/*
+============================================================================
+
+      DESCRIPTION:
+         This file handles the rebirth system of the game.
+         It stores and manages the player’s rebirth count.
+         
+      LAST MODIFIED:
+         June 25, 2026
+
+============================================================================
+*/
+
 #include "Rebirth.h"
 
 Rebirth::Rebirth()

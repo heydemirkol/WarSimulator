@@ -1,3 +1,16 @@
+/*
+============================================================================
+
+      DESCRIPTION:
+         This file contains methods for the commander, such as getting their name.
+         It includes managing their budget. This involves adding and reducing it.
+
+      LAST MODIFIED:
+         June 25, 2026
+
+============================================================================
+*/
+
 #include "Commander.h"
 #include "Clamp.h"
 

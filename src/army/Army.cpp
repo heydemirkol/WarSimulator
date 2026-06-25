@@ -1,3 +1,16 @@
+/*
+============================================================================
+
+      DESCRIPTION:
+         This file allows the commander to manage the army. 
+         It includes methods such as adding, removing, and modifying units.
+
+      LAST MODIFIED:
+         June 25, 2026
+
+============================================================================
+*/
+
 #include "Army.h"
 #include "Clamp.h"
 

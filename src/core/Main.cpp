@@ -1,3 +1,18 @@
+/*
+============================================================================
+
+      DESCRIPTION:
+         This file is used as the main control system of the game.
+         It processes the main menu and user input.
+         It manages gameplay actions such as buying and selling units.
+         It handles starting battles and resetting progress through rebirth.
+         
+      LAST MODIFIED:
+         June 25, 2026
+
+============================================================================
+*/
+
 #include "Army.h"
 #include "Commander.h" 
 #include "Power.h"

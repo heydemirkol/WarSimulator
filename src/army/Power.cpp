@@ -1,3 +1,15 @@
+/*
+============================================================================
+
+      DESCRIPTION:
+         This file is used to collectively measure the strength of units during battle.
+
+      LAST MODIFIED:
+         June 25, 2026
+
+============================================================================
+*/
+
 #include "Power.h"
 
 int getLandForce(Army& army) {

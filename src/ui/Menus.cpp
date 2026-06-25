@@ -1,3 +1,17 @@
+/*
+============================================================================
+
+      DESCRIPTION:
+         This file handles all game menus and UI display.
+         It shows the player’s current stats.
+         It displays the main menu and the army management menu.
+         
+      LAST MODIFIED:
+         June 25, 2026
+
+============================================================================
+*/
+
 #include "Menus.h"
 #include "Color.h"
 #include "Effect.h"

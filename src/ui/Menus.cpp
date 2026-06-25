@@ -10,36 +10,37 @@ static std::string header(const std::string& text) { // static header
     return "================ " + text + " ================\n"; // align
 }
 
-void showStats(const Game& game) {
+void showStats(const Army& army,
+               const Commander& commander,
+               const Multiplier& multiplier,
+               const Rebirth& rebirth) {
+
     printEffectText(header("STATS")); // stats header
     setConsoleColor(36); // sets cyan color
 
     std::cout << "Commander: " 
-              << game.commander.getCommanderName() << "\n";
+              << commander.getCommanderName() << "\n";
 
     std::cout << "Budget: $" 
-              << formatNumber(game.commander.getBudget()) << "\n";
+              << formatNumber(commander.getBudget()) << "\n";
 
     std::cout << "Rebirths: " 
-              << formatNumber(game.rebirth.getRebirths()) << "\n";
-
-    std::cout << "Rebirth Multiplier: " 
-              << formatNumber(game.multiplier.getRebirthMulti()) << "x\n";
+              << formatNumber(rebirth.getRebirths()) << "\n";
 
     std::cout << "Income Multiplier: " 
-              << formatNumber(game.multiplier.getIncomeMulti()) << "x\n";
+              << formatNumber(multiplier.getIncomeMulti()) << "x\n";
 
     std::cout << "Soldiers: "
-              << formatNumber(game.army.getSoldiers()) << "\n";
+              << formatNumber(army.getSoldiers()) << "\n";
 
     std::cout << "Tanks: "
-              << formatNumber(game.army.getTanks()) << "\n";
+              << formatNumber(army.getTanks()) << "\n";
 
     std::cout << "Jets: "
-              << formatNumber(game.army.getJets()) << "\n";
+              << formatNumber(army.getJets()) << "\n";
 
     std::cout << "Ships: "
-              << formatNumber(game.army.getShips()) << "\n";
+              << formatNumber(army.getShips()) << "\n";
 
     setConsoleColor(0); // reset color
 }
@@ -51,7 +52,8 @@ void showMainMenu() {
     std::cout << "[1] - War\n";
     std::cout << "[2] - Army Buy or Sell\n";
     std::cout << "[3] - Rebirth\n";
-    std::cout << "[4] - Exit\n";
+    std::cout << "[0] - Exit\n";
+    std::cout << "Choose: ";
     
     std::cout << "==============================================\n\n"; 
 
@@ -74,6 +76,9 @@ void showArmyMenu(const Army& army) {
     std::cout << "[7] - Sell Jet ($5 per unit)\n";
     std::cout << "[8] - Sell Ship ($5 per unit)\n";
     std::cout << "[0] - Cancel\n";
+    std::cout << "Choose: ";
+    
+    setConsoleColor(0); 
 
     std::cout << "==============================================\n\n";
 }

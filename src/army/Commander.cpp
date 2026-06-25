@@ -2,7 +2,7 @@
 #include "Clamp.h"
 
 Commander::Commander() 
-    : budget_(0) // starting budget
+    : budget_(0) 
 {}
 
 std::string Commander::getCommanderName() const {

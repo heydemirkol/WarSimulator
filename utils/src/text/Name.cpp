@@ -46,7 +46,7 @@ std::string generateName() {
         isInitialized = 1;
     }
     
-    int count = 40; // total number of names in array
+    int count = 38; // total number of names in array
 
     int index = rand() % count; // pick random index
 

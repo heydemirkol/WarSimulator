@@ -1,5 +1,9 @@
 #include "Rebirth.h"
 
+Rebirth::Rebirth()
+       : rebirth_(0)
+{}
+
 int Rebirth::getRebirths() const { // return the number of rebirths
     return rebirth_;
 }

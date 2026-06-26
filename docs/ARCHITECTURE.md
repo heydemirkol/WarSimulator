@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../assets/gifs/Architecture.gif" alt="Architecture" width="80%"/>
+  <img src="../assets/gifs/Architecture.gif" alt="Architecture" width="85%"/>
 </p>
 
 ---

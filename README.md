@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/gifs/Project.gif" alt="WarSimulator" width="80%"/>
+  <img src="assets/gifs/Project.gif" alt="WarSimulator" width="90%"/>
 </p>
 
 ---
@@ -25,7 +25,7 @@ This project is created for educational and learning purposes only and is intend
 # ► **PREVIEW**
 
 <p align="left">
-  <img src="assets/screenshots/Image5.PNG" alt="Image5" width="75%"/>
+  <img src="assets/screenshots/Image5.PNG" alt="Image5" width="80%"/>
 </p>
 
 ---

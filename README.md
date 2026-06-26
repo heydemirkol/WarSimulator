@@ -25,7 +25,7 @@ This project is created for educational and learning purposes only and is intend
 # ► **PREVIEW**
 
 <p align="left">
-  <img src="assets/screenshots/Image5.PNG" alt="Image5" width="60%"/>
+  <img src="assets/screenshots/Image5.PNG" alt="Image5" width="75%"/>
 </p>
 
 ---

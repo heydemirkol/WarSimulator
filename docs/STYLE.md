@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/gifs/Style.gif" alt="Style" width="80%"/>
+  <img src="../assets/gifs/Style.gif" alt="Style" width="90%"/>
 </p>
 
 ---

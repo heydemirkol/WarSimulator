@@ -1,5 +1,7 @@
+---
+
 <p align="center">
-  <img src="../assets/gifs/Style.gif" alt="Style" width="90%"/>
+  <img src="../assets/gifs/Style.gif" alt="Style" width="95%"/>
 </p>
 
 ---

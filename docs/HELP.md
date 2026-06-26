@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/gifs/Troubleshooting" alt="Troubleshooting" width="80%"/>
+  <img src="../assets/gifs/Troubleshooting" alt="Troubleshooting" width="80%"/>
 </p>
 
 ---

@@ -139,5 +139,7 @@ For more information about the project and to review the documentation, please r
 # ► **AUTHOR**
 
 Developed by **Abdüsselam Demirkol**
+
 Github: **heydemirkol**
+
 Date published: **26 June, 2026**

@@ -13,7 +13,7 @@ This document provides a visual preview of the game's gameplay. It offers a dire
 # ► **Initial Entry**
 
 <p align="left">
-  <img src="assets/screenshots/Image1.PNG" alt="Image1" width="75%"/>
+  <img src="assets/screenshots/Image1.PNG" alt="Image1" width="70%"/>
 </p>
 
 ---
@@ -21,7 +21,7 @@ This document provides a visual preview of the game's gameplay. It offers a dire
 # ► **After Playing for a Short Time**
 
 <p align="left">
-  <img src="assets/screenshots/Image2.PNG" alt="Image2" width="75%"/>
+  <img src="assets/screenshots/Image2.PNG" alt="Image2" width="70%"/>
 </p>
 
 ---
@@ -29,7 +29,7 @@ This document provides a visual preview of the game's gameplay. It offers a dire
 # ► **Buying and Selling Units Menu**
 
 <p align="left">
-  <img src="assets/screenshots/Image3.PNG" alt="Image3" width="75%"/>
+  <img src="assets/screenshots/Image3.PNG" alt="Image3" width="70%"/>
 </p>
 
 ---
@@ -37,7 +37,7 @@ This document provides a visual preview of the game's gameplay. It offers a dire
 # ► **Rebirth Screen**
 
 <p align="left">
-  <img src="assets/screenshots/Image4.PNG" alt="Image4" width="75%"/>
+  <img src="assets/screenshots/Image4.PNG" alt="Image4" width="70%"/>
 </p>
 
 ---
@@ -45,7 +45,7 @@ This document provides a visual preview of the game's gameplay. It offers a dire
 # ► **After Playing for a Long Time**
 
 <p align="left">
-  <img src="assets/screenshots/Image5.PNG" alt="Image5" width="75%"/>
+  <img src="assets/screenshots/Image5.PNG" alt="Image5" width="70%"/>
 </p>
 
 ---

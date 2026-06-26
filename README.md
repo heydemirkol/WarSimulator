@@ -1,5 +1,7 @@
+---
+
 <p align="center">
-  <img src="assets/gifs/Project.gif" alt="WarSimulator" width="90%"/>
+  <img src="assets/gifs/Project.gif" alt="WarSimulator" width="95%"/>
 </p>
 
 ---

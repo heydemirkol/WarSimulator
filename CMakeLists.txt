@@ -10,7 +10,7 @@
 #         Cross-Platform (Windows, Linux, macOS)
 #   
 #      LAST MODIFIED:
-#         June 25, 2026
+#         June 27, 2026
 #
 # ========================================================================
 
@@ -38,6 +38,7 @@ add_executable(${PROJECT_NAME}
     utils/src/console/Clear.cpp
     utils/src/console/Color.cpp
     utils/src/console/Pause.cpp
+    utils/src/console/Ansi.cpp
     utils/src/math/Clamp.cpp
     utils/src/text/Effect.cpp
     utils/src/text/Format.cpp

@@ -1,5 +1,5 @@
-#ifndef CONSOLE_H
-#define CONSOLE_H
+#ifndef ANSI_H
+#define ANSI_H
 
 void enableANSI();
 

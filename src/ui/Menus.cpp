@@ -7,7 +7,7 @@
          It displays the main menu and the army management menu.
          
       LAST MODIFIED:
-         June 25, 2026
+         June 27, 2026
 
 ============================================================================
 */
@@ -67,9 +67,12 @@ void showMainMenu() {
     std::cout << "[2] - Army Buy or Sell\n";
     std::cout << "[3] - Rebirth\n";
     std::cout << "[0] - Exit\n";
+
+    setConsoleColor("1;31");
+    std::cout << "==============================================\n"; 
+
+    setConsoleColor(36);
     std::cout << "Choose: ";
-    
-    std::cout << "==============================================\n\n"; 
 
     setConsoleColor(0); 
 }
@@ -85,14 +88,18 @@ void showArmyMenu(const Army& army) {
 
     printEffectText(header("SELL"));
 
+    setConsoleColor(31);
     std::cout << "[5] - Sell Soldier ($1 per unit)\n";
     std::cout << "[6] - Sell Tank ($2 per unit)\n";
     std::cout << "[7] - Sell Jet ($35 per unit)\n";
     std::cout << "[8] - Sell Ship ($600 per unit)\n";
     std::cout << "[0] - Cancel\n";
+
+    setConsoleColor("1;31");
+    std::cout << "==============================================\n";
+
+    setConsoleColor(36);
     std::cout << "Choose: ";
     
     setConsoleColor(0); 
-
-    std::cout << "==============================================\n\n";
 }

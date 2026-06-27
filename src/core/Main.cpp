@@ -8,7 +8,7 @@
          It handles starting battles and resetting progress through rebirth.
          
       LAST MODIFIED:
-         June 25, 2026
+         June 27, 2026
 
 ============================================================================
 */
@@ -26,10 +26,13 @@
 #include "Delay.h"
 #include "Effect.h"
 #include "Format.h"
+#include "Ansi.h"
 #include <string>
 #include <iostream>
 
 int main() {
+    enableANSI(); // Windows ANSI virtual terminal support
+
     Army army;
     Commander commander;
     Multiplier multiplier;

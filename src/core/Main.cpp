@@ -271,9 +271,7 @@ int main() {
 
                  pauseConsole();
              } 
-             else { // Invalid or insufficient
-                 std::cout << "Invalid selection or insufficient...";
-
+             else { // Invalid 
                  pauseConsole();
              }
              break;

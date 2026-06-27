@@ -2,9 +2,8 @@
 ============================================================================
 
       DESCRIPTION:
-         This utility provides a function to pause the console to 
-         prevent bugs and stop the window from closing instantly. 
-         It safely flushes residual input and waits for the ENTER key.
+         This utility pauses the console to prevent the window from closing immediately  
+         and ensures stable input handling by clearing leftover input and waiting for ENTER key.
 
       C++ STANDARD:
          Any (Standard C++)
@@ -16,7 +15,7 @@
          Terminal and console environments
 
       LAST MODIFIED:
-         June 11, 2026
+         June 27, 2026
 
 ============================================================================
 */
@@ -26,15 +25,11 @@
 #include <iostream>
 
 void pauseConsole() { 
-    // display the prompt message to the user
-    std::cout << "\nPress ENTER to continue..."; 
-    std::cin.clear();
+   std::cout << "\nPress ENTER to continue.. " << std::flush;
 
-    // safely clear the input buffer only if there is residual data left
-    if (std::cin.peek() != '\n' && std::cin.peek() != EOF) {
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    }
-    
-    // capture the ENTER key press
+    // clear any leftover input
+   std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    // wait for user to press ENTER
     std::cin.get();
 }
